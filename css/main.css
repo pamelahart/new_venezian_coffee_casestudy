@@ -1,0 +1,15 @@
+/**
+* Layout Defaults
+**/
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/**************************
+* footer nav
+***************************/
