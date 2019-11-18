@@ -1,16 +1,38 @@
-/**
-* Layout Defaults
+/**************************
+* layout defaults
+***************************/
+
+:root {
+  --font-sans-serif: Roboto, sans-serif;
+  --font-serif: Playfair Display, serif;
+  --tan: #caad8e;
+  --teal: #425664;
+  --lt-gray: #d3d1cf;
+  --white: #ffffff;
+
+}
 html {
   box-sizing: border-box;
 }
-*,
-*:before,
-*:after {
+*, *:before, *:after {
   box-sizing: inherit;
-**/
+}
 
-img {
-  width: 50%;
+body {
+font-family: var(--font-serif);
+color: var(--teal);
+line-height: 1.667;
+}
+
+h1,h2 {
+font-family: var(--font-sans-serif);
+letter-spacing: 0.1em;
+font-weight: 300;
+font-size: medium;
+text-transform: uppercase;
+}
+h2 {
+  font-weight: 400;
 }
 
 /**************************
