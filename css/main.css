@@ -26,7 +26,7 @@ body {
 font-family: var(--font-serif);
 color: var(--teal);
 line-height: 1.667;
-margint: auto;
+margin: auto;
 padding: 2em;
 }
 
@@ -101,16 +101,17 @@ font-size: small;
 }
 /* Top Nav Bar */
 .topnav {
-  background-color: color: var(var(--tan);
+  background-color: var(--tan);
   overflow: hidden;
+  width: 100%;
+  margin: 20px 0; 
 }
 
-/* Style the links inside the navigation bar */
+/* Nav links*/
 .topnav a {
   float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
+  text-align: left;
+  padding: 14px;
   text-decoration: none;
   font-size: small;
 }
