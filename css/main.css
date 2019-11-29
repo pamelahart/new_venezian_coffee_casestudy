@@ -6,6 +6,7 @@
   --font-sans-serif: Roboto, sans-serif;
   --font-serif: Playfair Display, serif;
   --tan: #caad8e;
+  --lt-tan: #f2ece7;
   --teal: #425664;
   --lt-gray: #d3d1cf;
   --white: #ffffff;
@@ -18,100 +19,64 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
 /**************************
 * typography
+h2 {
+    font-weight: 400;
+    font-size: smaller;
+  }
 ***************************/
 body {
-font-family: var(--font-serif);
-color: var(--teal);
-line-height: 1.667;
-margin: auto;
-padding: 2em;
-}
-
-h1,h2 {
-font-family: var(--font-sans-serif);
-letter-spacing: 0.1em;
-font-weight: 300;
-font-size: medium;
-text-transform: uppercase;
-}
-h2 {
-  font-weight: 400;
-  font-size: smaller;
-}
-h3,h4 {
   font-family: var(--font-serif);
-  font-weight: 700;
-  font-size: smaller;
-}
-h4 {
-  color: var(--tan);
-}
-ul {
-  list-style-type: none;
-  margin: 0;
+  color: var(--teal);
+  line-height: 1.667;
+  margin: auto;
   padding: 0;
-}
-/**************************
-* components
-***************************/
-.component img {
-  max-width: initial;
-}
-
-.component__img {
-  border: 1px solid teal;
-  overflow-x: auto;
-
-}
-.container {
-  max-width: 40rem;
-  margin: 0 auto;
-  padding: 1 rem;
-}
-.blog__container {
-  max-width: 40rem;
-  margin: 0 auto;
-  padding: 12 rem;
-  border: 1px solid teal;
-  overflow-x: auto;
-}
-.blog__copy {
-font-family: var(--font-sans-serif);
-letter-spacing: 0.1em;
-font-weight: 300;
-font-size: small;
-}
-.button {
-    display: inline-block;
-    background: var(--color-tan);
-    color: var(--color-white);
-    padding: .9rem 1em;
-    text-decoration: none;
-    font-family: var(--font-sans-serif);
-    text-transform: uppercase;
-}
-.button__copy {
-  text-decoration: none;
+  }
+  
+  h2 {
   font-family: var(--font-sans-serif);
-  color: var(--color-white);
+  letter-spacing: 0.1em;
+  font-weight: 300;
+  font-size: medium;
   text-transform: uppercase;
+  }
+  
+  h3,h4 {
+    font-family: var(--font-serif);
+    font-weight: 700;
+    font-size: smaller;
+  }
+  h4 {
+    color: var(--tan);
+  }
+
+/**************************
+* header
+***************************/
+
+.upper-nav-container {
+  display: flex;
+  background-color: var(--lt-tan);
+  padding: .5em 2em;
 }
-/* Top Nav Bar */
-.topnav {
-  background-color: var(--tan);
-  overflow: hidden;
-  width: 100%;
-  margin: 20px 0; 
+.col {
+  flex: 1;
 }
 
-/* Nav links*/
-.topnav a {
-  float: left;
-  text-align: left;
-  padding: 14px;
-  text-decoration: none;
+.right-content {
+  display: flex;
+  justify-content: flex-end;
+
+}
+.upper-nav-container a {
+  font-family: var(--font-sans-serif);
+  font-weight: 400;
   font-size: small;
+  color: var(--teal);
+  text-decoration: none;
+}
+.upper-nav-item {
+padding: .5em ;
+
 }
