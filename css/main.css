@@ -202,8 +202,12 @@ p {
 display: flex;
 flex-direction: column;
 justify-content: center;
-max-width: 50%;
-height:70%;
+max-width: 80%;
+height:100%;
+}
+.shopper-card-img {
+max-width: 80%;
+height: 80%;
 }
 .shopper-button {
 display: flex;
@@ -225,10 +229,24 @@ h3 {
 }
 /**************************
 * Blog
+.blog__copy {
+font-family: var(--font-sans-serif);
+letter-spacing: 0.1em;
+font-weight: 300;
+font-size: small;
 ***************************/
-
-
-
+}
+.blog-card {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 12 rem;
+  border: 1px solid teal;
+  overflow-x: auto;
+}
+.blog-card-img {
+  max-width: 80%;
+  height: 80%;
+}
 /**************************
 * footer
 ***************************/
