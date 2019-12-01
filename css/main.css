@@ -159,18 +159,70 @@ h4 {
   font-weight: 400;
   font-size: small;
   color: var(--white);
+  text-transform: uppercase;
 }
+.i {
+color: var(--white);
 }
-.hero-content-link {
-  color: var(--white);
-  text-decoration: none;
-  align-items: center;
+.hero-content-img {
+  display: flex;  
+  justify-content: right;
+  max-width: 100%;
+  height:100%;
+  
 }
 /**************************
 * Shopper
 ***************************/
-
-
+.shopper-container-container {
+  display: flex;
+  background-color: var(--lt-tan);
+  padding: .5em 2em;
+}
+.shopper-container {
+  display: flex;
+  background-color: var(--white);
+  padding: .5em 2em;
+}
+.shopper-headline {
+font-family: var(--font-serif);
+font-weight: 400;
+font-size: small;
+color: var(--teal);
+text-decoration: none;
+align-items: left;
+}
+p {
+  font-family: var(--font-serif);
+  font-weight: 300;
+  font-size: xx-small;
+  color: var(--gray);
+}
+.shopper-card {
+display: flex;
+flex-direction: column;
+justify-content: center;
+max-width: 50%;
+height:70%;
+}
+.shopper-button {
+display: flex;
+justify-content: center;
+background-color: var(--tan);
+padding: .1em 1em;
+max-width: 60px;
+height: 20px;
+font-family: var(--font-sans-serif);
+font-weight: 700;
+font-size: xx-small;
+color: var(--white);
+text-decoration: none;
+text-transform: uppercase;
+align-items: center;
+}
+h3 {
+  font-size: small;
+}
 /**************************
 * Blog
 ***************************/
