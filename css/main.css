@@ -233,7 +233,7 @@ h3 {
   display: flex;
   background-color: var(--lt-tan);
   padding: .5em 2em;
-  margin: 4em 3em 3em;
+  margin: 40em 3em 3em;
 }
 .subscription-content-name {
   font-family: var(--font-sans-serif);
