@@ -50,6 +50,9 @@ body {
   h4 {
     color: var(--tan);
   }
+  img {
+  width: 100%;
+  }
 
 /**************************
 * header
@@ -82,13 +85,8 @@ padding: .5em ;
   display: flex;
   background-color: var(--lt-white);
   padding: .5em 2em;
-}
-.center-main-content,
-.right-main-content,
-.left-main-content
- {
-  display: flex;
   justify-content:center;
+  align-items: center;
 }
 .main-nav-container a {
   font-family: var(--font-sans-serif);
@@ -99,18 +97,26 @@ padding: .5em ;
   align-items: center;
 }
 .main-nav-item {
-  padding: .5em ;
+  padding: .5em;
 }
+.logo {
+    max-width:10%;
+}
+.logo h1 {
+  display: none;
+}
+.logo img {
+  width: 100%;
+}
+
 h1 {
   color: white;
 }
 /**************************
 * logo???
 ***************************/
-  img {
-    max-width:55%;
-    height:55%;
-}
+
+
 /**************************
 * Side Bar in Nav
 ***************************/
@@ -140,7 +146,6 @@ h1 {
 .hero-content-container {
   display: flex;
   background-color: var(--teal);
-  padding: .5em 2em;
 }
 .hero-content-name {
   font-family: var(--font-sans-serif);
@@ -149,12 +154,13 @@ h1 {
   color: var(--white);
   text-decoration: none;
   align-items: center;
+  padding: 10em 2em;
 }
-h3 {
+.hero-content-name h3 {
   font-weight: 400;
   font-size: large;
 }
-h4 {
+.hero-content-name h4 {
   font-family: var(--font-sans-serif);
   font-weight: 400;
   font-size: small;
@@ -171,16 +177,20 @@ color: var(--white);
   height:100%;
 }
 /**************************
+* Main
+***************************/
+
+main {
+  padding: 2em;
+  background-color: var(--lt-tan);
+}
+
+/**************************
 * Shopper
 ***************************/
-.shopper-container-container {
-  display: flex;
-  background-color: var(--lt-tan);
-  padding: .5em 2em;
-}
+
 .shopper-container {
   display: flex;
-  background-color: var(--white);
   padding: .5em 2em;
 }
 .shopper-headline {
@@ -191,7 +201,7 @@ color: var(--teal);
 text-decoration: none;
 align-items: left;
 }
-p {
+.shopper-container p {
   font-family: var(--font-serif);
   font-weight: 300;
   font-size: xx-small;
@@ -201,18 +211,21 @@ p {
 display: flex;
 flex-direction: column;
 justify-content: center;
+margin: .5em;
+padding: .5em;
 max-width: 80%;
-height:100%;
+text-align: center;
+background-color: var(--white);
 }
 .shopper-card-img {
 max-width: 80%;
-height: 80%;
+margin: auto;
+padding: .2em;
 }
 .shopper-button {
-display: flex;
-justify-content: center;
 background-color: var(--tan);
 padding: .1em 1em;
+margin:auto;
 max-width: 60px;
 height: 20px;
 font-family: var(--font-sans-serif);
@@ -221,9 +234,8 @@ font-size: xx-small;
 color: var(--white);
 text-decoration: none;
 text-transform: uppercase;
-align-items: center;
 }
-h3 {
+.shopper-container h3 {
   font-size: small;
 }
 /**************************
@@ -264,12 +276,11 @@ h4 {
 }
 /**************************
 * Blog
-.blog__copy {
-font-family: var(--font-sans-serif);
-letter-spacing: 0.1em;
-font-weight: 300;
-font-size: small;
 ***************************/
+
+.blog-container {
+  display: flex;
+  padding: .5em 2em;
 }
 .blog-card {
   text-align: center;
@@ -279,10 +290,33 @@ font-size: small;
   background: var(--color-white);
   margin: 1 rem 0;
 }
-.blog-card-img {
-  max-width: 80%;
-  height: 80%;
+.blog-content-name {
+  font-family: var(--font-sans-serif);
+  letter-spacing: 0.1em;
+  font-weight: 300;
+  font-size: small;
 }
+.blog-content-name h4 {
+  color: var(--tan);
+}
+.blog-content-img {
+  max-width: auto;
+  max-height: auto;
+  margin: auto;
+  padding: .1em;
+}
+.blog-button {
+  background-color: var(--tan);
+  padding: .1em 1em;
+  margin:auto;
+  max-width: 60px;
+  height: 20px;
+  font-family: var(--font-sans-serif);
+  font-weight: 700;
+  font-size: xx-small;
+  color: var(--white);
+  text-decoration: none;
+  text-transform: uppercase;
 /**************************
 * footer
 ***************************/
