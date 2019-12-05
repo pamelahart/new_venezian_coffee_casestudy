@@ -234,6 +234,21 @@ text-transform: uppercase;
 .shopper-container h3 {
   font-size: small;
 }
+.coffee-icon-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: .5em;
+  padding: .5em;
+  max-width: 80%;
+  text-align: center;
+  background-color: var(--white);
+}
+.coffee-icon-card-img {
+max-width: 80%;
+margin: auto;
+padding: .2em;
+}
 /**************************
 * SUBSCRIPTION
 ***************************/
@@ -263,7 +278,6 @@ h4 {
   color: var(--teal);
   text-transform: uppercase;
 }
-
 .subscription-img {
   display: flex;  
   justify-content: left;
