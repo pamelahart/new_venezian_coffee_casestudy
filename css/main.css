@@ -112,10 +112,6 @@ padding: .5em ;
 h1 {
   color: white;
 }
-/**************************
-* logo???
-***************************/
-
 
 /**************************
 * Side Bar in Nav
@@ -317,11 +313,24 @@ h4 {
   color: var(--white);
   text-decoration: none;
   text-transform: uppercase;
-
+}
 /**************************
 * Follow Us
 ***************************/
-
+.followus-card-container{
+  display: flex;
+  padding: .5em 2em;
+  text-align: center;
+  padding: 1rem;
+  max-width: 30rem;
+  margin: 1 rem 0;
+}
+.follow-content-img {
+  max-width: auto;
+  max-height: auto;
+  margin: auto;
+  padding: .1em;
+}
 /**************************
 * Form
 ***************************/
