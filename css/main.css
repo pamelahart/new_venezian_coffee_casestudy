@@ -275,7 +275,7 @@ h4 {
   height:100%;
 }
 /**************************
-* Blog
+* News Blog
 ***************************/
 
 .blog-container {
@@ -317,6 +317,44 @@ h4 {
   color: var(--white);
   text-decoration: none;
   text-transform: uppercase;
+
+/**************************
+* Follow Us
+***************************/
+
+/**************************
+* Form
+***************************/
+
 /**************************
 * footer
 ***************************/
+.footer {
+  display: flex;
+  background-color: var(--white);
+  padding: .5em 2em;
+}
+.col {
+  flex: 1;
+}
+.left-footer {
+  display: flex;
+  justify-content: left;
+}
+.right-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+.footer a {
+  font-family: var(--font-sans-serif);
+  font-weight: 400;
+  font-size: small;
+  color: var(--teal);
+  text-decoration: none;
+}
+.footer-item {
+padding: .5em ;
+}
+.footer img {
+  width: 25%;
+}
