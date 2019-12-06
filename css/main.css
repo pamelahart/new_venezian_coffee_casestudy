@@ -19,6 +19,9 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+img {
+  width: 100%;
+}
 /**************************
 * typography
 h2 {
@@ -82,6 +85,7 @@ body {
 padding: .5em ;
 }
 .main-nav-container {
+  position: relative;
   display: flex;
   background-color: var(--lt-white);
   padding: .5em 2em;
@@ -95,6 +99,7 @@ padding: .5em ;
   color: var(--teal);
   text-decoration: none;
   align-items: center;
+  text-transform: uppercase;
 }
 .main-nav-item {
   padding: .5em;
@@ -118,30 +123,29 @@ h1 {
 ***************************/
 .side-nav {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  padding: 2em;
   background: var(--teal);
   font-family: var(--font-sans-serif);
-  font-weight: 400;
   font-size: small;
-  color: var(--white);
   text-decoration: none;
   align-items: center;
 }
-.sub-nav li {
-  font-family: var(--font-sans-serif);
-  font-weight: 400;
-  font-size: small;
-  color: var(--white);
-  text-decoration: none;
-  align-items: center;
+.side-nav a {
+ color: var(--white);
+ margin: auto;
+ 
 }
 /**************************
 * hero
 ***************************/
 .hero-content-container {
   display: flex;
-  background-color: var(--teal);
+  align-items: flex-end;
 }
 .hero-content-name {
   font-family: var(--font-sans-serif);
@@ -149,8 +153,9 @@ h1 {
   font-size: small;
   color: var(--white);
   text-decoration: none;
-  align-items: center;
   padding: 10em 2em;
+  height: 37em;
+  background-color: var(--teal);
 }
 .hero-content-name h3 {
   font-weight: 400;
@@ -166,12 +171,7 @@ h1 {
 .i {
 color: var(--white);
 }
-.hero-content-img {
-  display: flex;  
-  justify-content: right;
-  max-width: 100%;
-  height:100%;
-}
+.hero-content-img
 /**************************
 * Main
 ***************************/
@@ -234,11 +234,18 @@ text-transform: uppercase;
 .shopper-container h3 {
   font-size: small;
 }
+/**************************
+* SHOPPER ICONS
+***************************/
+
+.coffee-icon-container {
+  display: flex;
+}
 .coffee-icon-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: .5em;
+  margin: 0;
   padding: .5em;
   max-width: 80%;
   text-align: center;
@@ -255,8 +262,8 @@ padding: .2em;
 .subscription-card-container {
   display: flex;
   background-color: var(--lt-tan);
-  padding: .5em 2em;
-  margin: 40em 3em 3em;
+  margin: 4em 3em 3em;
+  align-items: center;
 }
 .subscription-content-name {
   font-family: var(--font-sans-serif);
@@ -266,24 +273,21 @@ padding: .2em;
   text-decoration: none;
   align-items: left;
   padding: 0.5em 2em;
+  background: var(--white);
+  height: 20em;
 }
-h3 {
+.subscription-card-container h3 {
   font-weight: 400;
   font-size: large;
 }
-h4 {
+.subscription-card-container h4 {
   font-family: var(--font-sans-serif);
   font-weight: 400;
   font-size: small;
   color: var(--teal);
   text-transform: uppercase;
 }
-.subscription-img {
-  display: flex;  
-  justify-content: left;
-  max-width: 100%;
-  height:100%;
-}
+
 /**************************
 * News Blog
 ***************************/
@@ -331,19 +335,17 @@ h4 {
 /**************************
 * Follow Us
 ***************************/
-.followus-card-container{
+
+.followus-container {
   display: flex;
+}
+.followus-card-container{
   padding: .5em 2em;
   text-align: center;
   padding: 1rem;
   max-width: 30rem;
   margin: 1 rem 0;
-}
-.follow-content-img {
-  max-width: auto;
-  max-height: auto;
-  margin: auto;
-  padding: .1em;
+
 }
 /**************************
 * Form
@@ -352,21 +354,16 @@ h4 {
 /**************************
 * footer
 ***************************/
-.footer {
+.footer-container {
   display: flex;
   background-color: var(--white);
   padding: .5em 2em;
 }
-.col {
-  flex: 1;
-}
 .left-footer {
   display: flex;
-  justify-content: left;
 }
 .right-footer {
   display: flex;
-  justify-content: flex-end;
 }
 .footer a {
   font-family: var(--font-sans-serif);
