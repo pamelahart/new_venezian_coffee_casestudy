@@ -53,9 +53,6 @@ body {
   h4 {
     color: var(--tan);
   }
-  img {
-  width: 100%;
-  }
 
 /**************************
 * header
@@ -171,12 +168,12 @@ h1 {
 .i {
 color: var(--white);
 }
-.hero-content-img
+
 /**************************
 * Main
 ***************************/
 
-main {
+.main-content {
   padding: 2em;
   background-color: var(--lt-tan);
 }
@@ -195,7 +192,7 @@ font-weight: 400;
 font-size: small;
 color: var(--teal);
 text-decoration: none;
-align-items: left;
+align-items: flex-start;
 }
 .shopper-container p {
   font-family: var(--font-serif);
@@ -271,7 +268,7 @@ padding: .2em;
   font-size: small;
   color: var(--teal);
   text-decoration: none;
-  align-items: left;
+  align-items: flex-start;
   padding: 0.5em 2em;
   background: var(--white);
   height: 20em;
@@ -291,7 +288,9 @@ padding: .2em;
 /**************************
 * News Blog
 ***************************/
-
+.blog-container h2 {
+  margin: .1em 0;
+}
 .blog-container {
   display: flex;
   padding: .5em 2em;
@@ -302,7 +301,7 @@ padding: .2em;
   padding: 1rem;
   max-width: 30rem;
   background: var(--color-white);
-  margin: 1 rem 0;
+  margin: 1rem 0;
 }
 .blog-content-name {
   font-family: var(--font-sans-serif);
@@ -314,9 +313,6 @@ padding: .2em;
   color: var(--tan);
 }
 .blog-content-img {
-  max-width: auto;
-  max-height: auto;
-  margin: auto;
   padding: .1em;
 }
 .blog-button {
@@ -344,8 +340,10 @@ padding: .2em;
   text-align: center;
   padding: 1rem;
   max-width: 30rem;
-  margin: 1 rem 0;
-
+  margin: 1rem 0;
+}
+.followus-container h2 {
+  padding: .5em 2em;
 }
 /**************************
 * Form
@@ -365,16 +363,26 @@ padding: .2em;
 .right-footer {
   display: flex;
 }
-.footer a {
+.right-footer .col {
+  margin: 1em;
+}
+
+footer a {
   font-family: var(--font-sans-serif);
   font-weight: 400;
   font-size: small;
   color: var(--teal);
   text-decoration: none;
 }
-.footer-item {
-padding: .5em ;
+footer ul {
+list-style: none;
 }
-.footer img {
+.right-footer ul{
+  border-top: .5px solid var(--tan);
+}
+.footer-item {
+  padding: .5em ;
+}
+footer img {
   width: 25%;
 }
