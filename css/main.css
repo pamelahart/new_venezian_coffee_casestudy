@@ -174,7 +174,7 @@ color: var(--white);
 ***************************/
 
 .main-content {
-  padding: 2em;
+  padding: 4em;
   background-color: var(--lt-tan);
 }
 
@@ -249,7 +249,7 @@ text-transform: uppercase;
   background-color: var(--white);
 }
 .coffee-icon-card-img {
-max-width: 80%;
+max-width: 50%;
 margin: auto;
 padding: .2em;
 }
@@ -259,7 +259,7 @@ padding: .2em;
 .subscription-card-container {
   display: flex;
   background-color: var(--lt-tan);
-  margin: 4em 3em 3em;
+  margin: 2em 0;
   align-items: center;
 }
 .subscription-content-name {
@@ -352,10 +352,14 @@ padding: .2em;
 /**************************
 * footer
 ***************************/
+footer {
+  padding: .2em 2em;
+}
+
 .footer-container {
   display: flex;
   background-color: var(--white);
-  padding: .5em 2em;
+
 }
 .left-footer {
   display: flex;
@@ -376,8 +380,9 @@ footer a {
 }
 footer ul {
 list-style: none;
+padding: 0;
 }
-.right-footer ul{
+.right-footer ul, .lower-footer-container {
   border-top: .5px solid var(--tan);
 }
 .footer-item {

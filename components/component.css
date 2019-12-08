@@ -18,7 +18,23 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
+section {
+  border: 2px solid var(--teal);
+  padding: .5em 2em;
+}
+img {
+  display: block;
+}
+.component__img, .component__code {
+  border: 1px solid
+}
+.component__label {
+  background-color: var(--teal);
+  color: #ffffff;
+  margin: 0;
+  padding: .75em;
+  text-transform: uppercase;
+}
 /**************************
 * typography
 ***************************/
@@ -29,12 +45,14 @@ line-height: 1.667;
 margin: auto;
 padding: 2em;
 }
-
+.type img {
+width: 25%;
+}
 h1,h2 {
 font-family: var(--font-sans-serif);
 letter-spacing: 0.1em;
 font-weight: 300;
-font-size: medium;
+font-size: small;
 text-transform: uppercase;
 }
 h2 {
@@ -54,23 +72,11 @@ ul {
   margin: 0;
   padding: 0;
 }
+
 /**************************
 * components
 ***************************/
-.component img {
-  max-width: initial;
-}
 
-.component__img {
-  border: 1px solid teal;
-  overflow-x: auto;
-
-}
-.container {
-  max-width: 40rem;
-  margin: 0 auto;
-  padding: 1 rem;
-}
 .blog__container {
   max-width: 40rem;
   margin: 0 auto;
