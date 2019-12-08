@@ -6,9 +6,11 @@
   --font-sans-serif: Roboto, sans-serif;
   --font-serif: Playfair Display, serif;
   --tan: #caad8e;
+  --lt-tan: #f2ece7;
   --teal: #425664;
   --lt-gray: #d3d1cf;
   --white: #ffffff;
+  --gray: #747372;
 
 }
 html {
@@ -39,7 +41,7 @@ img {
 * typography
 ***************************/
 body {
-font-family: var(--font-serif);
+font-family: var(--font-sans-serif);
 color: var(--teal);
 line-height: 1.667;
 margin: auto;
@@ -54,6 +56,7 @@ letter-spacing: 0.1em;
 font-weight: 300;
 font-size: small;
 text-transform: uppercase;
+
 }
 h2 {
   font-weight: 400;
@@ -72,10 +75,18 @@ ul {
   margin: 0;
   padding: 0;
 }
+p {
+  color: var(--gray);
+  font-size: small;
+}
 
 /**************************
 * components
 ***************************/
+
+/************
+* BLOG
+************/
 
 .blog__container {
   max-width: 40rem;
@@ -105,7 +116,11 @@ font-size: small;
   color: var(--color-white);
   text-transform: uppercase;
 }
+/************
+* NAV
+************/
 /* Top Nav Bar */
+
 .topnav {
   background-color: var(--tan);
   overflow: hidden;
@@ -121,3 +136,6 @@ font-size: small;
   text-decoration: none;
   font-size: small;
 }
+/************
+* FOOTER
+************/

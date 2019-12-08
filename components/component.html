@@ -11,14 +11,15 @@
   </head>
 
   <body>
-  <h1>Web Components for Veneziano Coffee Roasters</h1>
+  <h1>Veneziano Coffee Roasters</h1>
+  <h2>Web Components</h2>
   
   <!--TYPE section-->
   <section class="type">
-  <h2>Typography Defaults</h2>
+  <h1>Typography Defaults</h1>
   
   <article class="component">
-      <h3 class="component__name">Headings (h1, h2, h3 & h4)</h3>
+      <h2 class="component__name">Headings (h1, h2, h3 & h4)</h2>
       <div class="component__img">
         <h6 class="component__label">image</h6>
         <img srcset="img/atoms/vc-h1.png 2x" src="img/atoms/vc-h1.png 2x" alt="h1"/>
@@ -36,81 +37,95 @@
       </div> 
     </article>
 
-    <h3>Body</h3>
-    <h3>Headings</h3>
+    <article class="component">
+      <h2 class="component__name">Body Copy</h2>
+      <div class="component__img">
+        <h6 class="component__label">image</h6>
+        <img srcset="img/atoms/vc-bodycopy.png 2x" src="img/atoms/vc-h1.png 2x" alt="bodycopy"/>
+      </div>
 
-
+      <div class="component__code">
+        <h6 class="component__label">code</h6>
+        <p>Experience La Palma & El Tucan’s award winning processing techniques in a different region! The Neighbors & Crops model was established by La Palma & El Tucan to share innovating... </p>
+      </div> 
+    </article>
   </section>
 
  <!--HERO section-->
-    <article class="component">
-        <h3 class="component__name">Hero Body</h3>
-        <div class="component__img">
-        <img srcset="img/organisms/vc-o_hero_card2.png 2x" src="img/organisms/vc-o_hero_card2.png 2x" alt="body copy"/>
+ <h1 class="component__name">Hero Section</h1>
+ <section class="hero">
+  <article class="component">
+  
+  <div class="component__img">
+    <h6 class="component__label">image</h6>
+    <img srcset="img/organisms/vc-o_hero_card2.png 2x" src="img/organisms/vc-o_hero_card2.png 2x" alt="hero section"/>
+  </div>
+
+  <div class="component__code">
+  
+    <!-- Hero Section from index-->
+    
+    <section class="hero-content-container">
+      <div class="component__code">
+        <h6 class="component__label">code</h6>
+          <div class="hero-content-name">
+            <h2>DELAGUA NEIGHBORS + CROPS</h2>
+              <h3>Same varietal, process and region, different producers.</h3>
+                <a href="https://venezianocoffee.com.au/shop/"> 
+                  <h4> Explore Collection
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                  </h4> 
+                </a>
           </div>
-            <div class="component__code">
-            <h1>Never Run Out</h1>
-             <p>Get coffee delivered straight to your home or <br> office, and save 
-              with our subscriptions.</p> 
-            <h2>Shop subscriptions</h2>
-          </div> 
-      </article>
- <!--TYPE section-->
-
-    <h2>Sidebar</h2>
-    <article class="component">
-        <h3 class="component__name">Sidebar</h3>
-        <div class="component__img">
-        <img srcset="img/organisms/vc-o_sidebar.png 2x" alt="sidebar"/>
           </div>
-            <div class="component__code">
-            <div class="sidebar__container">
-              
-                <!--responsive sidebar stuff <div id="mySidenav" class="sidenav"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
-                <a href="#">Wholesale</a>
-                <a href="#">Learn</a>
-                <a href="#">Shop</a>
-                <a href="#">About</a>
-                <a href="#">Locations</a>
-                <a href="#">Contact</a>
-                <a href="#">Log In</a>
-                <a href="#">Sign Up</a>
-          </div> 
-          </div> 
-        </article>
+        <div class="hero-content-img">
+          <img src="img/delaquacoffee_blogimage.png" alt="DelAqua Coffe bag">         
+        </div> 
+    <!-- End Hero Section from index-->  
+</section>
 
-    <h2>Blog</h2>
-
+<!--Blog section-->
+<h1 class="component__name">Blog Section</h1>
+ <section class="blog">
     <article class="component">
+      <h6 class="component__label">image</h6>
+    
     <h3 class="component__name">Blog Page</h3>
     <div class="component__img">
-    <img srcset="img/molecues/vc-m_blog_unit.png 2x" src="img/molecues/vc-m_blog_unit.png 2x" alt="blog"/>
+      <img srcset="img/molecues/vc-m_blog_unit.png 2x" src="img/molecues/vc-m_blog_unit.png 2x" alt="blog"/>
     </div>
-        <div class="component__code">
+
+    <div class="component__code">
+        <h6 class="component__label">code</h6>
+        
         <div class="blog__container">
-        <img src="../img/DelAquaCoffee_Blogimage.png" alt="DelAqua Coffee bag"/>
-        <h3>DelAqua Coffee - Neighbors & Crops</h3>
-        <h4>News | 1 Nov 2019</h4>
-        <p class="blog__copy">Experience La Palma & El Tucan's award winning
-          processing techniques in a different region! The
-          Neighbors & Crops model was established...
-        </p> 
-        <a href="#!" class="button--solid">Read More</a>
+          <img src="components/img/molecues/delaquacoffee_blogimage.png" alt="DelAqua Coffee bag"/>
+          <h3>DelAqua Coffee - Neighbors & Crops</h3>
+          <h4>News | 1 Nov 2019</h4>
+          <p class="blog__copy">Experience La Palma & El Tucan's award winning processing techniques in a different region! The Neighbors & Crops model was established...
+          </p> 
+          <a href="#!" class="button--solid">Read More</a>
         </div>
       </div> 
   </article>
+</section>
 
-  <h2>Top Nav</h2>
+<!--Nav section-->
 
+<section class="nav">
+  <h1>Navigation</h1>
   <article class="component">
-  <h3 class="component__name">Top Nav</h3>
-  <div class="component__img">
-  <img srcset="img/organisms/vc-o-header.png 2x" src="img/organisms/vc-o-header.png 2x" alt="top nav"/>
-  </div>
+    <h2 class="component__name">Top Nav</h2>
+      <div class="component__img">
+        <h6 class="component__label">image</h6>
+        <img srcset="img/organisms/vc-o-header.png 2x" src="img/organisms/vc-o-header.png 2x" alt="top nav"/>
+      </div>
+
       <div class="component__code">
-      <div class="topnav">
+        <h6 class="component__label">code</h6>
+        <div class="topnav">
           <a class="active" href="#home">Menu</a>
-          <div class="topnavlink--main__img">
+        <div class="topnavlink--main__img">
           <img src="../img/icon-grinder-tan.png" alt="grinder icon"/>
 
           <div class="topnavlogo__img">
@@ -126,11 +141,14 @@
       </div>
   </div>
 </article>
-<h2>Footer</h2>
 
+<!--Footer section-->
+<h1>Footer</h1>
   <article class="component">
-  <h3 class="component__name">Footer</h3>
-  <div class="component__img">
+    <h2 class="component__name">Main Footer</h2>
+      <div class="component__img">
+        <h6 class="component__label">image</h6>
+
   <img srcset="img/organisms/vc-o_footer1.png 2x" src="img/organisms/vc-o_footer1.png 2x" alt="footer"/>
   </div>
       <div class="component__code">
