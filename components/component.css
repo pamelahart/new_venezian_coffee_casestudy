@@ -86,42 +86,21 @@ p {
 ***************************/
 
 /************
-* BLOG
-************/
-
-.blog__container {
-  max-width: 40rem;
-  margin: 0 auto;
-  padding: 12 rem;
-  border: 1px solid teal;
-  overflow-x: auto;
-}
-.blog__copy {
-font-family: var(--font-sans-serif);
-letter-spacing: 0.1em;
-font-weight: 300;
-font-size: small;
-}
-.button {
-    display: inline-block;
-    background: var(--color-tan);
-    color: var(--color-white);
-    padding: .9rem 1em;
-    text-decoration: none;
-    font-family: var(--font-sans-serif);
-    text-transform: uppercase;
-}
-.button__copy {
-  text-decoration: none;
-  font-family: var(--font-sans-serif);
-  color: var(--color-white);
-  text-transform: uppercase;
-}
-/************
 * NAV
 ************/
-/* Top Nav Bar */
 
+.upper-nav-container {
+  display: flex;
+  background-color: var(--lt-tan);
+  padding: .5em 2em;
+}
+.col {
+  flex: 1;
+}
+.right-content {
+  display: flex;
+  justify-content: flex-end;
+}
 .main-nav-container {
   position: relative;
   display: flex;
@@ -163,7 +142,38 @@ font-size: small;
  color: var(--white);
  margin: auto;
 }
+/*************
+* BLOG
+************/
 
+.blog__container {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 12 rem;
+  border: 1px solid teal;
+  overflow-x: auto;
+}
+.blog__copy {
+font-family: var(--font-sans-serif);
+letter-spacing: 0.1em;
+font-weight: 300;
+font-size: small;
+}
+.button {
+    display: inline-block;
+    background: var(--color-tan);
+    color: var(--color-white);
+    padding: .9rem 1em;
+    text-decoration: none;
+    font-family: var(--font-sans-serif);
+    text-transform: uppercase;
+}
+.button__copy {
+  text-decoration: none;
+  font-family: var(--font-sans-serif);
+  color: var(--color-white);
+  text-transform: uppercase;
+}
 /************
 * FOOTER
 ************/
@@ -284,18 +294,18 @@ color: var(--white);
   text-decoration: none;
   text-transform: uppercase;
 }
-
 /**************************
 * footer
 ***************************/
 footer {
   padding: .2em 2em;
 }
-
+.footer-container img {
+  size: 25%;
+}
 .footer-container {
   display: flex;
   background-color: var(--white);
-
 }
 .left-footer {
   display: flex;
@@ -306,7 +316,6 @@ footer {
 .right-footer .col {
   margin: 1em;
 }
-
 footer a {
   font-family: var(--font-sans-serif);
   font-weight: 400;
@@ -326,3 +335,8 @@ padding: 0;
 }
 footer img {
   width: 25%;
+}
+.lower-footer-item a {
+  color: var(--teal);
+  text-transform: uppercase;
+}

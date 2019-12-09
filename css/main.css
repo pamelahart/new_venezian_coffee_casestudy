@@ -3,318 +3,219 @@
 ***************************/
 
 :root {
-  --font-sans-serif: Roboto, sans-serif;
-  --font-serif: Playfair Display, serif;
-  --tan: #caad8e;
-  --lt-tan: #f2ece7;
-  --teal: #425664;
-  --lt-gray: #d3d1cf;
-  --white: #ffffff;
-
-}
-html {
-  box-sizing: border-box;
-
-}
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-img {
-  width: 100%;
-}
-/**************************
-* typography
-h2 {
-    font-weight: 400;
-    font-size: smaller;
-  }
-***************************/
-body {
-  font-family: var(--font-serif);
-  color: var(--teal);
-  line-height: 1.667;
-  margin: auto;
-  padding: 0;
-  }
+    --font-sans-serif: Roboto, sans-serif;
+    --font-serif: Playfair Display, serif;
+    --tan: #caad8e;
+    --lt-tan: #f2ece7;
+    --teal: #425664;
+    --lt-gray: #d3d1cf;
+    --white: #ffffff;
   
+  }
+  html {
+    box-sizing: border-box;
+  
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  img {
+    width: 100%;
+  }
+  /**************************
+  * typography
   h2 {
-  font-family: var(--font-sans-serif);
-  letter-spacing: 0.1em;
-  font-weight: 300;
-  font-size: medium;
-  text-transform: uppercase;
+      font-weight: 400;
+      font-size: smaller;
+    }
+  ***************************/
+  body {
+    font-family: var(--font-serif);
+    color: var(--teal);
+    line-height: 1.667;
+    margin: auto;
+    padding: 0;
+    }
+    
+    h2 {
+    font-family: var(--font-sans-serif);
+    letter-spacing: 0.1em;
+    font-weight: 300;
+    font-size: medium;
+    text-transform: uppercase;
+    }
+    
+    h3,h4 {
+      font-family: var(--font-serif);
+      font-weight: 700;
+      font-size: smaller;
+    }
+    h4 {
+      color: var(--tan);
+    }
+  
+  /**************************
+  * header
+  ***************************/
+  
+  .upper-nav-container {
+    display: flex;
+    background-color: var(--lt-tan);
+    padding: .5em 2em;
+  }
+  .col {
+    flex: 1;
   }
   
-  h3,h4 {
-    font-family: var(--font-serif);
-    font-weight: 700;
-    font-size: smaller;
+  .right-content {
+    display: flex;
+    justify-content: flex-end;
   }
-  h4 {
-    color: var(--tan);
+  .upper-nav-container a {
+    font-family: var(--font-sans-serif);
+    font-weight: 400;
+    font-size: small;
+    color: var(--teal);
+    text-decoration: none;
   }
-
-/**************************
-* header
-***************************/
-
-.upper-nav-container {
-  display: flex;
-  background-color: var(--lt-tan);
-  padding: .5em 2em;
-}
-.col {
-  flex: 1;
-}
-
-.right-content {
-  display: flex;
-  justify-content: flex-end;
-}
-.upper-nav-container a {
-  font-family: var(--font-sans-serif);
-  font-weight: 400;
-  font-size: small;
-  color: var(--teal);
-  text-decoration: none;
-}
-.upper-nav-item {
-padding: .5em ;
-
-}
-.logo {
-    max-width:10%;
-}
-.logo h1 {
-  display: none;
-}
-.logo img {
-  width: 100%;
-}
-h1 {
-  color: white;
-}
-.main-nav-container {
-  position: relative;
-  display: flex;
-  background-color: var(--lt-white);
-  padding: .5em 2em;
-  justify-content:center;
-  align-items: center;
-}
-.main-nav-container a {
-  font-family: var(--font-sans-serif);
-  font-weight: 400;
-  font-size: small;
-  color: var(--teal);
-  text-decoration: none;
-  align-items: center;
-  text-transform: uppercase;
-}
-.main-nav-item {
-  padding: .5em;
-
-/**************************
-* Side Bar in Nav
-***************************/
-.side-nav {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  height: 100%;
-  top: 0;
-  right: 0;
-  padding: 2em;
-  background: var(--teal);
-  font-family: var(--font-sans-serif);
-  font-size: small;
-  text-decoration: none;
-  align-items: center;
-}
-.side-nav a {
- color: var(--white);
- margin: auto;
-}
-
-/**************************
-* hero
-***************************/
-.hero-content-container {
-  display: flex;
-  align-items: flex-end;
-}
-.hero-content-name {
-  font-family: var(--font-sans-serif);
-  font-weight: 400;
-  font-size: small;
+  .upper-nav-item {
+  padding: .5em ;
+  }
+  .main-nav-container {
+    position: relative;
+    display: flex;
+    background-color: var(--lt-white);
+    padding: .5em 2em;
+    justify-content:center;
+    align-items: center;
+  }
+  .main-nav-container a {
+    font-family: var(--font-sans-serif);
+    font-weight: 400;
+    font-size: small;
+    color: var(--teal);
+    text-decoration: none;
+    align-items: center;
+    text-transform: uppercase;
+  }
+  .main-nav-item {
+    padding: .5em;
+  }
+  .logo {
+      max-width:10%;
+  }
+  .logo h1 {
+    display: none;
+  }
+  .logo img {
+    width: 100%;
+  }
+  
+  h1 {
+    color: white;
+  }
+  
+  /**************************
+  * Side Bar in Nav
+  ***************************/
+  .side-nav {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    padding: 2em;
+    background: var(--teal);
+    font-family: var(--font-sans-serif);
+    font-size: small;
+    text-decoration: none;
+    align-items: center;
+  }
+  .side-nav a {
+   color: var(--white);
+   margin: auto;
+   
+  }
+  /**************************
+  * hero
+  ***************************/
+  .hero-content-container {
+    display: flex;
+    align-items: flex-end;
+  }
+  .hero-content-name {
+    font-family: var(--font-sans-serif);
+    font-weight: 400;
+    font-size: small;
+    color: var(--white);
+    text-decoration: none;
+    padding: 10em 2em;
+    height: 37em;
+    background-color: var(--teal);
+  }
+  .hero-content-name h3 {
+    font-weight: 400;
+    font-size: large;
+  }
+  .hero-content-name h4 {
+    font-family: var(--font-sans-serif);
+    font-weight: 400;
+    font-size: small;
+    color: var(--white);
+    text-transform: uppercase;
+  }
+  .i {
   color: var(--white);
-  text-decoration: none;
-  padding: 10em 2em;
-  height: 37em;
-  background-color: var(--teal);
-}
-.hero-content-name h3 {
-  font-weight: 400;
-  font-size: large;
-}
-.hero-content-name h4 {
-  font-family: var(--font-sans-serif);
-  font-weight: 400;
-  font-size: small;
-  color: var(--white);
-  text-transform: uppercase;
-}
-.i {
-color: var(--white);
-}
-
-/**************************
-* Main
-***************************/
-
-.main-content {
-  padding: 4em;
-  background-color: var(--lt-tan);
-}
-
-/**************************
-* Shopper
-***************************/
-
-.shopper-container {
-  display: flex;
-  padding: .5em 2em;
-}
-.shopper-headline {
-font-family: var(--font-serif);
-font-weight: 400;
-font-size: small;
-color: var(--teal);
-text-decoration: none;
-align-items: flex-start;
-}
-.shopper-container p {
+  }
+  
+  /**************************
+  * Main
+  ***************************/
+  
+  .main-content {
+    padding: 4em;
+    background-color: var(--lt-tan);
+  }
+  
+  /**************************
+  * Shopper
+  ***************************/
+  
+  .shopper-container {
+    display: flex;
+    padding: .5em 2em;
+  }
+  .shopper-headline {
   font-family: var(--font-serif);
-  font-weight: 300;
-  font-size: xx-small;
-  color: var(--gray);
-}
-.shopper-card {
-display: flex;
-flex-direction: column;
-justify-content: center;
-margin: .5em;
-padding: .5em;
-max-width: 80%;
-text-align: center;
-background-color: var(--white);
-}
-.shopper-card-img {
-max-width: 80%;
-margin: auto;
-padding: .2em;
-}
-.shopper-button {
-background-color: var(--tan);
-padding: .1em 1em;
-margin:auto;
-max-width: 60px;
-height: 20px;
-font-family: var(--font-sans-serif);
-font-weight: 700;
-font-size: xx-small;
-color: var(--white);
-text-decoration: none;
-text-transform: uppercase;
-}
-.shopper-container h3 {
-  font-size: small;
-}
-/**************************
-* SHOPPER ICONS
-***************************/
-
-.coffee-icon-container {
-  display: flex;
-}
-.coffee-icon-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0;
-  padding: .5em;
-  max-width: 80%;
-  text-align: center;
-  background-color: var(--white);
-}
-.coffee-icon-card-img {
-max-width: 50%;
-margin: auto;
-padding: .2em;
-}
-/**************************
-* SUBSCRIPTION
-***************************/
-.subscription-card-container {
-  display: flex;
-  background-color: var(--lt-tan);
-  margin: 2em 0;
-  align-items: center;
-}
-.subscription-content-name {
-  font-family: var(--font-sans-serif);
   font-weight: 400;
   font-size: small;
   color: var(--teal);
   text-decoration: none;
   align-items: flex-start;
-  padding: 0.5em 2em;
-  background: var(--white);
-  height: 20em;
-}
-.subscription-card-container h3 {
-  font-weight: 400;
-  font-size: large;
-}
-.subscription-card-container h4 {
-  font-family: var(--font-sans-serif);
-  font-weight: 400;
-  font-size: small;
-  color: var(--teal);
-  text-transform: uppercase;
-}
-
-/**************************
-* News Blog
-***************************/
-.blog-container h2 {
-  margin: .1em 0;
-}
-.blog-container {
+  }
+  .shopper-container p {
+    font-family: var(--font-serif);
+    font-weight: 300;
+    font-size: xx-small;
+    color: var(--gray);
+  }
+  .shopper-card {
   display: flex;
-  padding: .5em 2em;
-}
-.blog-card {
+  flex-direction: column;
+  justify-content: center;
+  margin: .5em;
+  padding: .5em;
+  max-width: 80%;
   text-align: center;
-  border: .25rem double var(--teal);
-  padding: 1rem;
-  max-width: 30rem;
-  background: var(--color-white);
-  margin: 1rem 0;
-}
-.blog-content-name {
-  font-family: var(--font-sans-serif);
-  letter-spacing: 0.1em;
-  font-weight: 300;
-  font-size: small;
-}
-.blog-content-name h4 {
-  color: var(--tan);
-}
-.blog-content-img {
-  padding: .1em;
-}
-.blog-button {
+  background-color: var(--white);
+  }
+  .shopper-card-img {
+  max-width: 80%;
+  margin: auto;
+  padding: .2em;
+  }
+  .shopper-button {
   background-color: var(--tan);
   padding: .1em 1em;
   margin:auto;
@@ -326,71 +227,167 @@ padding: .2em;
   color: var(--white);
   text-decoration: none;
   text-transform: uppercase;
-}
-/**************************
-* Follow Us
-***************************/
-
-.followus-container {
-  display: flex;
-}
-.followus-card-container{
-  padding: .5em 2em;
-  text-align: center;
-  padding: 1rem;
-  max-width: 30rem;
-  margin: 1rem 0;
-}
-.followus-container h2 {
-  padding: .5em 2em;
-}
-/**************************
-* Form
-***************************/
-
-/**************************
-* footer
-***************************/
-footer {
-  padding: .2em 2em;
-}
-
-.footer-container {
-  display: flex;
-  background-color: var(--white);
-
-}
-.left-footer {
-  display: flex;
-}
-.right-footer {
-  display: flex;
-}
-.right-footer .col {
-  margin: 1em;
-}
-
-footer a {
-  font-family: var(--font-sans-serif);
-  font-weight: 400;
-  font-size: small;
-  color: var(--teal);
-  text-decoration: none;
-}
-footer ul {
-list-style: none;
-padding: 0;
-}
-.right-footer ul, .lower-footer-container {
-  border-top: .5px solid var(--tan);
-}
-.footer-item {
-  padding: .5em ;
-}
-footer img {
-  width: 25%;
-}
-.lower-footer-item a {
-  color: var(--teal);
-  text-transform: uppercase;
-}
+  }
+  .shopper-container h3 {
+    font-size: small;
+  }
+  /**************************
+  * SHOPPER ICONS
+  ***************************/
+  
+  .coffee-icon-container {
+    display: flex;
+  }
+  .coffee-icon-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: .5em;
+    max-width: 80%;
+    text-align: center;
+    background-color: var(--white);
+  }
+  .coffee-icon-card-img {
+  max-width: 50%;
+  margin: auto;
+  padding: .2em;
+  }
+  /**************************
+  * SUBSCRIPTION
+  ***************************/
+  .subscription-card-container {
+    display: flex;
+    background-color: var(--lt-tan);
+    margin: 2em 0;
+    align-items: center;
+  }
+  .subscription-content-name {
+    font-family: var(--font-sans-serif);
+    font-weight: 400;
+    font-size: small;
+    color: var(--teal);
+    text-decoration: none;
+    align-items: flex-start;
+    padding: 0.5em 2em;
+    background: var(--white);
+    height: 20em;
+  }
+  .subscription-card-container h3 {
+    font-weight: 400;
+    font-size: large;
+  }
+  .subscription-card-container h4 {
+    font-family: var(--font-sans-serif);
+    font-weight: 400;
+    font-size: small;
+    color: var(--teal);
+    text-transform: uppercase;
+  }
+  
+  /**************************
+  * News Blog
+  ***************************/
+  .blog-container h2 {
+    margin: .1em 0;
+  }
+  .blog-container {
+    display: flex;
+    padding: .5em 2em;
+  }
+  .blog-card {
+    text-align: center;
+    border: .25rem double var(--teal);
+    padding: 1rem;
+    max-width: 30rem;
+    background: var(--color-white);
+    margin: 1rem 0;
+  }
+  .blog-content-name {
+    font-family: var(--font-sans-serif);
+    letter-spacing: 0.1em;
+    font-weight: 300;
+    font-size: small;
+  }
+  .blog-content-name h4 {
+    color: var(--tan);
+  }
+  .blog-content-img {
+    padding: .1em;
+  }
+  .blog-button {
+    background-color: var(--tan);
+    padding: .1em 1em;
+    margin:auto;
+    max-width: 60px;
+    height: 20px;
+    font-family: var(--font-sans-serif);
+    font-weight: 700;
+    font-size: xx-small;
+    color: var(--white);
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  /**************************
+  * Follow Us
+  ***************************/
+  
+  .followus-container {
+    display: flex;
+  }
+  .followus-card-container{
+    padding: .5em 2em;
+    text-align: center;
+    padding: 1rem;
+    max-width: 30rem;
+    margin: 1rem 0;
+  }
+  .followus-container h2 {
+    padding: .5em 2em;
+  }
+  /**************************
+  * Form
+  ***************************/
+  
+  /**************************
+  * footer
+  ***************************/
+  footer {
+    padding: .2em 2em;
+  }
+  
+  .footer-container {
+    display: flex;
+    background-color: var(--white);
+  
+  }
+  .left-footer {
+    display: flex;
+  }
+  .right-footer {
+    display: flex;
+  }
+  .right-footer .col {
+    margin: 1em;
+  }
+  
+  footer a {
+    font-family: var(--font-sans-serif);
+    font-weight: 400;
+    font-size: small;
+    color: var(--teal);
+    text-decoration: none;
+  }
+  footer ul {
+  list-style: none;
+  padding: 0;
+  }
+  .right-footer ul, .lower-footer-container {
+    border-top: .5px solid var(--tan);
+  }
+  .footer-item {
+    padding: .5em ;
+  }
+  footer img {
+    width: 25%;
+  }
