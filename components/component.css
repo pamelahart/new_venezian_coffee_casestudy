@@ -26,6 +26,7 @@ section {
 }
 img {
   display: block;
+  width: 100%;
 }
 .component__img, .component__code {
   border: 1px solid
@@ -121,21 +122,207 @@ font-size: small;
 ************/
 /* Top Nav Bar */
 
-.topnav {
-  background-color: var(--tan);
-  overflow: hidden;
-  width: 100%;
-  margin: 20px 0; 
+.main-nav-container {
+  position: relative;
+  display: flex;
+  background-color: var(--lt-white);
+  padding: .5em 2em;
+  justify-content:center;
+  align-items: center;
+}
+.main-nav-container a {
+  font-family: var(--font-sans-serif);
+  font-weight: 400;
+  font-size: small;
+  color: var(--teal);
+  text-decoration: none;
+  align-items: center;
+  text-transform: uppercase;
+}
+.main-nav-item {
+  padding: .5em;
+
+/**************************
+* Side Bar in Nav
+***************************/
+.side-nav {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  padding: 2em;
+  background: var(--teal);
+  font-family: var(--font-sans-serif);
+  font-size: small;
+  text-decoration: none;
+  align-items: center;
+}
+.side-nav a {
+ color: var(--white);
+ margin: auto;
 }
 
-/* Nav links*/
-.topnav a {
-  float: left;
-  text-align: left;
-  padding: 14px;
-  text-decoration: none;
-  font-size: small;
-}
 /************
 * FOOTER
 ************/
+.hero-content-container {
+  display: flex;
+  align-items: flex-end;
+}
+.hero-content-name {
+  font-family: var(--font-sans-serif);
+  font-weight: 400;
+  font-size: small;
+  color: var(--white);
+  text-decoration: none;
+  padding: 10em 2em;
+  height: 37em;
+  background-color: var(--teal);
+}
+.hero-content-name h3 {
+  font-weight: 400;
+  font-size: large;
+}
+.hero-content-name h4 {
+  font-family: var(--font-sans-serif);
+  font-weight: 400;
+  font-size: small;
+  color: var(--white);
+  text-transform: uppercase;
+}
+.i {
+color: var(--white);
+}
+
+/**************************
+* Main
+***************************/
+
+.main-content {
+  padding: 4em;
+  background-color: var(--lt-tan);
+}
+
+/**************************
+* SUBSCRIPTION
+***************************/
+.subscription-card-container {
+  display: flex;
+  background-color: var(--lt-tan);
+  margin: 2em 0;
+  align-items: center;
+}
+.subscription-content-name {
+  font-family: var(--font-sans-serif);
+  font-weight: 400;
+  font-size: small;
+  color: var(--teal);
+  text-decoration: none;
+  align-items: flex-start;
+  padding: 0.5em 2em;
+  background: var(--white);
+  height: 20em;
+}
+.subscription-card-container h2 {
+  font-weight: 400;
+  font-size: large;
+}
+.subscription-card-container h3 {
+  font-weight: 400;
+  font-size: large;
+}
+.subscription-card-container h4 {
+  font-family: var(--font-sans-serif);
+  font-weight: 400;
+  font-size: small;
+  color: var(--teal);
+  text-transform: uppercase;
+}
+
+/**************************
+* News Blog
+***************************/
+.blog-container h2 {
+  margin: .1em 0;
+}
+.blog-container {
+  display: flex;
+  padding: .5em 2em;
+}
+.blog-card {
+  text-align: center;
+  border: .25rem double var(--teal);
+  padding: 1rem;
+  max-width: 30rem;
+  background: var(--color-white);
+  margin: 1rem 0;
+}
+.blog-content-name {
+  font-family: var(--font-sans-serif);
+  letter-spacing: 0.1em;
+  font-weight: 300;
+  font-size: small;
+}
+.blog-content-name h4 {
+  color: var(--tan);
+}
+.blog-content-img {
+  padding: .1em;
+}
+.blog-button {
+  background-color: var(--tan);
+  padding: .1em 1em;
+  margin:auto;
+  max-width: 60px;
+  height: 20px;
+  font-family: var(--font-sans-serif);
+  font-weight: 700;
+  font-size: xx-small;
+  color: var(--white);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/**************************
+* footer
+***************************/
+footer {
+  padding: .2em 2em;
+}
+
+.footer-container {
+  display: flex;
+  background-color: var(--white);
+
+}
+.left-footer {
+  display: flex;
+}
+.right-footer {
+  display: flex;
+}
+.right-footer .col {
+  margin: 1em;
+}
+
+footer a {
+  font-family: var(--font-sans-serif);
+  font-weight: 400;
+  font-size: small;
+  color: var(--teal);
+  text-decoration: none;
+}
+footer ul {
+list-style: none;
+padding: 0;
+}
+.right-footer ul, .lower-footer-container {
+  border-top: .5px solid var(--tan);
+}
+.footer-item {
+  padding: .5em ;
+}
+footer img {
+  width: 25%;

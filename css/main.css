@@ -80,6 +80,19 @@ body {
 }
 .upper-nav-item {
 padding: .5em ;
+
+}
+.logo {
+    max-width:10%;
+}
+.logo h1 {
+  display: none;
+}
+.logo img {
+  width: 100%;
+}
+h1 {
+  color: white;
 }
 .main-nav-container {
   position: relative;
@@ -100,20 +113,6 @@ padding: .5em ;
 }
 .main-nav-item {
   padding: .5em;
-}
-.logo {
-    max-width:10%;
-}
-.logo h1 {
-  display: none;
-}
-.logo img {
-  width: 100%;
-}
-
-h1 {
-  color: white;
-}
 
 /**************************
 * Side Bar in Nav
@@ -135,8 +134,8 @@ h1 {
 .side-nav a {
  color: var(--white);
  margin: auto;
- 
 }
+
 /**************************
 * hero
 ***************************/
@@ -390,4 +389,8 @@ padding: 0;
 }
 footer img {
   width: 25%;
+}
+.lower-footer-item a {
+  color: var(--teal);
+  text-transform: uppercase;
 }

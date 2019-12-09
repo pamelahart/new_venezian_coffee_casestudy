@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title> Components for Venezian Coffee Case Study </title>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:300,400,700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="component.css"/>
     <link rel="stylesheet" href="../css/normalize.css"/>
   </head>
@@ -69,20 +70,20 @@
       <div class="component__code">
         <h6 class="component__label">code</h6>
           <div class="hero-content-name">
-            <h2>DELAGUA NEIGHBORS + CROPS</h2>
+            <h2>DelAgua Neighbors + Crops</h2>
               <h3>Same varietal, process and region, different producers.</h3>
                 <a href="https://venezianocoffee.com.au/shop/"> 
-                  <h4> Explore Collection
+                  <h4> Shop Subscriptions
                   <i class="fas fa-long-arrow-alt-right"></i>
                   </h4> 
                 </a>
           </div>
           </div>
-        <div class="hero-content-img">
-          <img src="img/delaquacoffee_blogimage.png" alt="DelAqua Coffe bag">         
+            <div class="hero-content-img">
+           <img src="./img/molecues/delaquacoffee_blogimage.png" alt="delaqua coffee bag">
         </div> 
+    </section>
     <!-- End Hero Section from index-->  
-</section>
 
 <!--Blog section-->
 <h1 class="component__name">Blog Section</h1>
@@ -99,7 +100,7 @@
         <h6 class="component__label">code</h6>
         
         <div class="blog__container">
-          <img src="components/img/molecues/delaquacoffee_blogimage.png" alt="DelAqua Coffee bag"/>
+          <img src="./img/molecues/delaquacoffee_blogimage.png" alt="DelAqua Coffee bag"/>
           <h3>DelAqua Coffee - Neighbors & Crops</h3>
           <h4>News | 1 Nov 2019</h4>
           <p class="blog__copy">Experience La Palma & El Tucan's award winning processing techniques in a different region! The Neighbors & Crops model was established...
@@ -121,26 +122,41 @@
         <img srcset="img/organisms/vc-o-header.png 2x" src="img/organisms/vc-o-header.png 2x" alt="top nav"/>
       </div>
 
-      <div class="component__code">
-        <h6 class="component__label">code</h6>
-        <div class="topnav">
-          <a class="active" href="#home">Menu</a>
-        <div class="topnavlink--main__img">
-          <img src="../img/icon-grinder-tan.png" alt="grinder icon"/>
-
-          <div class="topnavlogo__img">
-          <img src="../img/VENEZIANO_logo teal.png" alt="veneziano logo"/>
-          <div class="topnavlink--secondary__img">
-          <img src="../img/icon-magglass-ltgray.png" alt="magnifying glass"/>
-          <img src="../img/icon-cart-ltgray.png" alt="cart icon"/>
-          <a href="#login">Log in</a>
-          <a href="#signup">Sign Up</a>
-        </div>
-        </div>
-        </div>
-      </div>
-  </div>
-</article>
+      <!-- Top Nav Section -->
+      <nav class="upper-nav-container">
+          <div class="left-content col">
+            <a class="upper-nav-item" href="https://venezianocoffee.com.au/about/">About  <i class="fas fa-chevron-down"></i></a>
+            <a class="upper-nav-item" href="https://venezianocoffee.com.au/contact/
+            ">Contact  </a>
+            <i class="fas fa-search upper-nav-item"></i>
+          </div> 
+          <div class="right-content col">
+              <a class="upper-nav-item" href="https://venezianocoffee.com.au/my-account/">Log In</a>
+              <a class="upper-nav-item" href="https://venezianocoffee.com.au/my-account/?action=register">Sign Up</a>
+          </div>
+        </nav>
+  
+  <!-- Main Nav Section -->
+        <nav class="main-nav-container">
+              <a class="main-nav-item" href="https://venezianocoffee.com.au/shop/">Shop  <i class="fas fa-chevron-down"></i></a>
+  
+              <a class="main-nav-item" href="https://venezianocoffee.com.au/coffee-subscriptions/">Subscriptions  <i class="fas fa-chevron-down"></i></a>
+  
+            <a class="main-nav-item logo"
+                href="https://venezianocoffee.com.au/">
+              <h1>VENEZIANO Coffee Roasters</h1>
+              <img src="img/veneziano_logo_teal.png" alt="VENEZIANO logo">
+            </a> 
+  
+            <a class="main-nav-item" href="#">Wholesale  <i class="fas fa-chevron-down"></i></a>
+  
+            <a class="main-nav-item" href="https://venezianocoffee.com.au/resources/">Learn  <i class="fas fa-chevron-down"></i></a>
+      
+          <aside class="side-nav">
+            <a href="https://venezianocoffee.com.au/our-cafes/">Our Cafes  <i class="fas fa-chevron-down"></i></a>
+          </aside>
+        </nav> 
+    </article>
 
 <!--Footer section-->
 <h1>Footer</h1>
@@ -152,24 +168,132 @@
   <img srcset="img/organisms/vc-o_footer1.png 2x" src="img/organisms/vc-o_footer1.png 2x" alt="footer"/>
   </div>
       <div class="component__code">
-      <div class="footer">
-        <ul>
-            <li>Wholesale</li>
-            <li>Resources</li>
-            <li>Barista Training</li>
-            <li>Events</li>
-            <li>Blog</li>
-            <li>Shop</li>
-            <li>Coffee Subscriptions</li>
-            <li>Office coffee</li>
-            <li>      </li>
-            <li>      </li>
-            <li>      </li>
-            <li>      </li>
-            <li>      </li>
-            </ul>
-        </div>
+      <!-- MAIN FOOTER -->
+  <footer>
+    <div class="footer-container">
+    <div class="left-footer col">
+      <ul>
+        <li>
+          <a href="#"><img src="./img/atoms/veneziano_logo_teal.png" alt="VENEZIANO logo"></a>
+        </li>
+
+          <li>
+            <a href="https://www.facebook.com/VenezianoCoffeeRoasters">
+            <i class="fab fa-facebook-f"></i></a>
+          
+            <a href="https://www.instagram.com/venezianocoffeeroasters/">
+            <i class="fab fa-instagram"></i></a>
+          
+            <a href="https://www.linkedin.com/company/veneziano-coffee-roasters/">
+            <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+
+          <li>16-18 River Street, Richmond VIC 3121
+          </li>
+
+          <li>
+          1326 3333 | sales@venezianocoffee.com.au
+          </li>
+
+          <li>
+          <a href="https://venezianocoffee.com.au/my-account/">Log In</a>
+          </li>
+
+          <li>
+          <a href="https://venezianocoffee.com.au/our-cafes/">Cafe Locations</a>
+          </li>
+
+          <li>
+          <a href="https://venezianocoffee.com.au/my-account/?action=register">Subscribe</a>
+          </li>
+        </ul>
       </div>
-    </article>
+
+<!-- RIGHT-SIDE OF FOOTER -->
+      <div class="right-footer col">
+        <div class="col">
+          <ul>
+            <li>
+            <a href="https://venezianocoffee.com.au/wholesale-coffee-australia/">Wholesale</a>
+            </li>
+          </ul>
+
+          <ul>
+            <li>
+            <a href="https://venezianocoffee.com.au/resources/">Resources</a>
+            </li>
+
+            <li>
+            <a href="https://venezianocoffee.com.au/barista-training-courses/">Barista Training</a>
+            </li>
+
+            <li>
+            <a href="https://venezianocoffee.com.au/events/">Events</a>
+            </li>
+
+            <li>
+            <a href="https://venezianocoffee.com.au/blog/">Blog</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <ul>
+          <li>
+          <a href="https://venezianocoffee.com.au/shop/">Shop</a>
+          </li>
+
+          <li>
+          <a href="https://venezianocoffee.com.au/coffee-subscriptions/">Coffee Subscriptions</a>
+          </li>
+
+          <li>
+              <a href="https://venezianocoffee.com.au/office-coffee/">Office Coffee</a>
+              </li>
+        </ul>
+
+        <ul>
+          <li>
+          <a href="https://venezianocoffee.com.au/about/">About</a>
+          </li>
+
+          <li>
+          <a href="https://venezianocoffee.com.au/our-people/">Our People</a>
+          </li>
+
+          <li>
+          <a href="https://venezianocoffee.com.au/coffee-growers/">Growers</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col">  
+        <ul>
+          <li>
+          <a href="https://venezianocoffee.com.au/locations-2/">Locations</a>
+          </li>
+
+          <li>
+          <a href="https://venezianocoffee.com.au/our-cafes/">Cafe Locations</a>
+          </li>
+        </ul>
+      
+        <ul>
+          <li>
+          <a href="https://venezianocoffee.com.au/contact/">Contact us</a>
+          </li>
+
+          <li>
+          <a href="https://venezianocoffee.com.au/careers/">Careers</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+        
+
+
   </body>
+  
   </html>
